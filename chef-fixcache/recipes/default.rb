@@ -1,5 +1,5 @@
 #
-## Cookbook Name:: fixcache
+## Cookbook Name:: chef-fixcache
 ## Recipe:: default
 ##
 ## Copyright 2014, Christian Fernandez
