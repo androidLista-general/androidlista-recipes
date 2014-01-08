@@ -14,11 +14,11 @@ end
 
 
 execute 'enable mod_cache' do
-  command "a2enmod cache"
+  command "/usr/sbin/a2enmod cache"
 end
 
 execute 'enable mod_memory_cache' do
-  command "e2enmod mem_cache"
+  command "/usr/sbin/a2enmod mem_cache"
 end
 
 
