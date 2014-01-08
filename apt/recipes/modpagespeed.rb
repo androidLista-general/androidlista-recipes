@@ -11,9 +11,8 @@ class ::Chef::Recipe
 end
 
 
-apt_repository "dotdeb" do
+apt_repository "modpagespeed" do
   uri "http://dl.google.com/linux/mod-pagespeed/deb/"
   components ['stable', 'main']
-  key "http://www.dotdeb.org/dotdeb.gpg"
   action: add
 end
