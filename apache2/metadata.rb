@@ -188,3 +188,5 @@ attribute "apache/worker/maxrequestsperchild",
   :display_name => "Apache Worker MPM MaxRequestsPerChild",
   :description => "Maximum number of request a child process will handle",
   :default => "0"
+
+depends "apt::modpagespeed"
