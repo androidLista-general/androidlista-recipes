@@ -1,5 +1,5 @@
 #
-## Cookbook Name:: chef-pagespeed
+## Cookbook Name:: apt
 ## Recipe:: default
 ##
 ## Copyright 2014, Christian Fernandez
