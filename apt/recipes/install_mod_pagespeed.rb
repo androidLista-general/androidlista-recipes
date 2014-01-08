@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: apache2
-# Recipe:: pagespeed 
+# Recipe:: install_mod_pagespeed 
 #
 # Copyright 2008, OpsCode, Inc.
 #
@@ -17,10 +17,15 @@
 # limitations under the License.
 #
 
+class ::Chef::Recipe
+    include ::modpagespeed
+end
+
 package 'apache2' do
   package_name 'mod-pagespeed-stable'
   action :install
 end
 
-
-apache_module "pagespeed"
+service "apache2" do
+  action :restart
+end
