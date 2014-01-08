@@ -6,6 +6,13 @@
 ##
 ## Licensed under the GPLv3
 
+template "mem_cache.conf" do
+  path "/etc/apache2/mods-available/mem_cache.conf"
+  source "mem_cache.conf.erb"
+end
+
+
+
 execute 'enable mod_cache' do
   command "a2enmod cache"
 end
