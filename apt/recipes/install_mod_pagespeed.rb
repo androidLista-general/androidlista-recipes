@@ -27,6 +27,11 @@ package 'apache2' do
   options "--force-yes"
 end
 
+template "pagespeed.conf" do
+    path "/etc/apache2/mods-available/pagespeed.conf"
+    source "pagespeed.conf.erb"
+end
+
 service "apache2" do
   action :restart
 end
