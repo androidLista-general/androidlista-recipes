@@ -14,5 +14,5 @@ end
 apt_repository "modpagespeed" do
   uri "http://dl.google.com/linux/mod-pagespeed/deb/"
   components ['stable', 'main']
-  action: add
+  action :add
 end
