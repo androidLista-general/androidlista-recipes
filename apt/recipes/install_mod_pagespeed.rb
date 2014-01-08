@@ -18,7 +18,7 @@
 #
 
 class ::Chef::Recipe
-    include ::modpagespeed
+    include ::Apt
 end
 
 package 'apache2' do
