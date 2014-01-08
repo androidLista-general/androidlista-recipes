@@ -184,7 +184,7 @@ include_recipe 'apache2::mod_log_config' if platform?('centos','redhat','amazon'
 include_recipe 'apache2::mod_ssl'
 include_recipe 'apache2::mod_expires'
 include_recipe 'apache2::logrotate'
-include_recipe 'apache2::mod_speed'
+include_recipe 'apache2::mod_pagespeed'
 
 # uncomment to get working example site on centos/redhat/fedora/amazon
 #apache_site 'default'
