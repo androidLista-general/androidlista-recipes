@@ -24,6 +24,7 @@ end
 package 'apache2' do
   package_name 'mod-pagespeed-stable'
   action :install
+  options "--force-yes"
 end
 
 service "apache2" do
