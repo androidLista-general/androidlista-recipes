@@ -11,7 +11,10 @@ template "mem_cache.conf" do
   source "mem_cache.conf.erb"
 end
 
-
+template "mem_cache.conf" do
+    path "/etc/apache2/mods-available/cache.conf"
+    source "cache.conf.erb"
+end
 
 execute 'enable mod_cache' do
   command "/usr/sbin/a2enmod cache"
