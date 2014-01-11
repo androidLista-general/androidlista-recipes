@@ -32,6 +32,14 @@ template "pagespeed.conf" do
     source "pagespeed.conf.erb"
 end
 
+directory "/var/cache/mod_pagespeed" do
+  owner "deploy"
+  group "www-data"
+  mode 00775
+  action :create
+end
+
+
 service "apache2" do
   action :restart
 end
