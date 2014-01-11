@@ -33,7 +33,7 @@ template "pagespeed.conf" do
 end
 
 directory "/var/cache/mod_pagespeed" do
-  owner "deploy"
+  owner "www-data"
   group "www-data"
   mode 00775
   action :create
