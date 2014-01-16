@@ -80,3 +80,10 @@ end
     only_if { apt_installed? }
   end
 end
+
+
+# aqui instalamos el gem de ruby para correr aws/s3 scripts en los server
+
+gem_package "aws-sdk" do
+  action :install
+end
